@@ -1,0 +1,235 @@
+EESchema Schematic File Version 4
+LIBS:bytebeatbox-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack3_Ground J3
+U 1 1 5BA745C0
+P 8550 4050
+F 0 "J3" H 8554 4392 50  0000 C CNN
+F 1 "AudioJack3_Ground" H 8554 4301 50  0000 C CNN
+F 2 "" H 8550 4050 50  0001 C CNN
+F 3 "~" H 8550 4050 50  0001 C CNN
+	1    8550 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Crystal LS1
+U 1 1 5BA745C7
+P 8600 3000
+F 0 "LS1" H 8775 2996 50  0000 L CNN
+F 1 "Speaker_Crystal" H 8775 2905 50  0000 L CNN
+F 2 "" H 8565 2950 50  0001 C CNN
+F 3 "~" H 8565 2950 50  0001 C CNN
+	1    8600 3000
+	1    0    0    -1  
+$EndComp
+Text HLabel 4200 3450 0    50   Input ~ 0
+AUDIO_IN
+$Comp
+L Amplifier_Operational:LM358 U2
+U 1 1 5BB727AD
+P 6150 3000
+F 0 "U2" H 6150 3367 50  0000 C CNN
+F 1 "LM358" H 6150 3276 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6150 3000 50  0001 C CNN
+	1    6150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U2
+U 3 1 5BB72901
+P 6300 5250
+F 0 "U2" H 6258 5296 50  0000 L CNN
+F 1 "LM358" H 6258 5205 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6300 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6300 5250 50  0001 C CNN
+	3    6300 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3100 5750 3100
+Wire Wire Line
+	5750 3100 5750 3250
+Wire Wire Line
+	5750 3250 6550 3250
+Wire Wire Line
+	6550 3250 6550 3000
+Wire Wire Line
+	6550 3000 6450 3000
+$Comp
+L Amplifier_Operational:LM358 U2
+U 2 1 5BB72A0F
+P 6150 4100
+F 0 "U2" H 6150 4467 50  0000 C CNN
+F 1 "LM358" H 6150 4376 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6150 4100 50  0001 C CNN
+	2    6150 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4200 5750 4200
+Wire Wire Line
+	5750 4200 5750 4350
+Wire Wire Line
+	5750 4350 6550 4350
+Wire Wire Line
+	6550 4350 6550 4100
+Wire Wire Line
+	6550 4100 6450 4100
+Wire Wire Line
+	5400 3450 5400 2900
+Wire Wire Line
+	5400 2900 5850 2900
+Wire Wire Line
+	4200 3450 5400 3450
+Wire Wire Line
+	5400 3450 5400 4000
+Wire Wire Line
+	5400 4000 5850 4000
+Connection ~ 5400 3450
+Wire Wire Line
+	8350 4150 8250 4150
+Wire Wire Line
+	8250 4150 8250 4100
+Wire Wire Line
+	8250 4050 8350 4050
+Wire Wire Line
+	8250 4100 6550 4100
+Connection ~ 8250 4100
+Wire Wire Line
+	8250 4100 8250 4050
+Connection ~ 6550 4100
+$Comp
+L power:GNDA #PWR030
+U 1 1 5BB733A5
+P 8050 4250
+F 0 "#PWR030" H 8050 4000 50  0001 C CNN
+F 1 "GNDA" H 8055 4077 50  0000 C CNN
+F 2 "" H 8050 4250 50  0001 C CNN
+F 3 "" H 8050 4250 50  0001 C CNN
+	1    8050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4250 8050 3950
+Wire Wire Line
+	8050 3950 8350 3950
+$Comp
+L power:GNDA #PWR031
+U 1 1 5BB7359E
+P 8200 3250
+F 0 "#PWR031" H 8200 3000 50  0001 C CNN
+F 1 "GNDA" H 8205 3077 50  0000 C CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3250 8200 3100
+Wire Wire Line
+	8200 3100 8400 3100
+Wire Wire Line
+	6550 3000 8400 3000
+Connection ~ 6550 3000
+$Comp
+L Device:C C11
+U 1 1 5BB74120
+P 6650 5250
+F 0 "C11" H 6765 5296 50  0000 L CNN
+F 1 "100n" H 6765 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6688 5100 50  0001 C CNN
+F 3 "~" H 6650 5250 50  0001 C CNN
+	1    6650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4850 6200 4900
+$Comp
+L power:GNDA #PWR029
+U 1 1 5BB74497
+P 6200 5650
+F 0 "#PWR029" H 6200 5400 50  0001 C CNN
+F 1 "GNDA" H 6205 5477 50  0000 C CNN
+F 2 "" H 6200 5650 50  0001 C CNN
+F 3 "" H 6200 5650 50  0001 C CNN
+	1    6200 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5650 6200 5600
+Wire Wire Line
+	6200 4900 6650 4900
+Wire Wire Line
+	6650 4900 6650 5100
+Connection ~ 6200 4900
+Wire Wire Line
+	6200 4900 6200 4950
+Wire Wire Line
+	6200 5600 6650 5600
+Wire Wire Line
+	6650 5600 6650 5400
+Connection ~ 6200 5600
+Wire Wire Line
+	6200 5600 6200 5550
+Text HLabel 4400 4900 0    50   Input ~ 0
+VDDA
+$Comp
+L power:VDDA #PWR028
+U 1 1 5BB882E2
+P 6200 4850
+F 0 "#PWR028" H 6200 4700 50  0001 C CNN
+F 1 "VDDA" H 6217 5023 50  0000 C CNN
+F 2 "" H 6200 4850 50  0001 C CNN
+F 3 "" H 6200 4850 50  0001 C CNN
+	1    6200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDDA #PWR026
+U 1 1 5BB88311
+P 4600 4800
+F 0 "#PWR026" H 4600 4650 50  0001 C CNN
+F 1 "VDDA" H 4617 4973 50  0000 C CNN
+F 2 "" H 4600 4800 50  0001 C CNN
+F 3 "" H 4600 4800 50  0001 C CNN
+	1    4600 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4900 4600 4900
+Wire Wire Line
+	4600 4900 4600 4800
+Text HLabel 4400 5050 0    50   Input ~ 0
+GNDA
+$Comp
+L power:GNDA #PWR027
+U 1 1 5BB88A59
+P 4600 5200
+F 0 "#PWR027" H 4600 4950 50  0001 C CNN
+F 1 "GNDA" H 4605 5027 50  0000 C CNN
+F 2 "" H 4600 5200 50  0001 C CNN
+F 3 "" H 4600 5200 50  0001 C CNN
+	1    4600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5050 4600 5050
+Wire Wire Line
+	4600 5050 4600 5200
+$EndSCHEMATC
